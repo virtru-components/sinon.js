@@ -33,6 +33,8 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+// START COMPONENT HACK: wrap to prevent detection of modules and exports
+module.exports = (function(module, exports) {
 var sinon = (function () {
 "use strict";
 
@@ -4221,3 +4223,6 @@ if (typeof module == "object" && typeof require == "function") {
 }(typeof sinon == "object" && sinon || null, typeof window != "undefined" ? window : global));
 
 return sinon;}.call(typeof window != 'undefined' && window || {}));
+// END COMPONENT HACK
+  return sinon;
+})();
