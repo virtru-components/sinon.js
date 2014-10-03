@@ -2,7 +2,7 @@
   "name": "sinon",
   "repo": "virtru-components/sinon.js",
   "description": "Standalone and test framework agnostic JavaScript test spies, stubs and mocks.",
-  "version": "1.6.0",
+  "version": "1.8.2",
   "development": {},
   "license": "BSD",
   "scripts": [
